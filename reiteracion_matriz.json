@@ -1,8 +1,8 @@
 {
   "resumen": {
-    "total_reiteraciones_detectadas": 104,
-    "total_innecesarias": 14,
-    "horas_recuperables_estimadas": 216.6,
+    "total_reiteraciones_detectadas": 93,
+    "total_innecesarias": 13,
+    "horas_recuperables_estimadas": 209.4,
     "threshold_fuzzy": 75
   },
   "reiteraciones": [
@@ -44,19 +44,6 @@
       "tipo_reiteracion": "INNECESARIA",
       "similitud": 100,
       "horas_duplicadas_estimadas": 14.4
-    },
-    {
-      "contenido": "Sistemas de referencia terrestre y marcos de referencia.",
-      "contenido_relacionado": "Sistemas de referencia.",
-      "asignatura_1": "GP204",
-      "semestre_1": 2,
-      "nivel_iho_1": 1,
-      "asignatura_2": "LSM102",
-      "semestre_2": 1,
-      "nivel_iho_2": 1,
-      "tipo_reiteracion": "INNECESARIA",
-      "similitud": 100,
-      "horas_duplicadas_estimadas": 7.2
     },
     {
       "contenido": "Técnicas y requerimientos  de calibración.",
@@ -293,19 +280,6 @@
       "horas_duplicadas_estimadas": 6.0
     },
     {
-      "contenido": "Técnicas y requerimientos  de calibración.",
-      "contenido_relacionado": "Requerimientos de calibración y documentación.",
-      "asignatura_1": "HO202",
-      "semestre_1": 2,
-      "nivel_iho_1": 3,
-      "asignatura_2": "LSM102",
-      "semestre_2": 1,
-      "nivel_iho_2": 1,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 88,
-      "horas_duplicadas_estimadas": 4.0
-    },
-    {
       "contenido": "Requerimientos de calibración y documentación.",
       "contenido_relacionado": "Técnicas de calibración y requerimientos.",
       "asignatura_1": "LSM102",
@@ -317,19 +291,6 @@
       "tipo_reiteracion": "REVISAR",
       "similitud": 88,
       "horas_duplicadas_estimadas": 6.0
-    },
-    {
-      "contenido": "Requerimientos de calibración y documentación.",
-      "contenido_relacionado": "Técnicas de calibración y requerimientos.",
-      "asignatura_1": "LSM102",
-      "semestre_1": 1,
-      "nivel_iho_1": 1,
-      "asignatura_2": "RS201",
-      "semestre_2": 2,
-      "nivel_iho_2": 2,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 88,
-      "horas_duplicadas_estimadas": 4.0
     },
     {
       "contenido": "Correcciones atmosféricas y radiométricas para mediciones ópticas.",
@@ -437,19 +398,6 @@
     },
     {
       "contenido": "Datos de la columna de agua.",
-      "contenido_relacionado": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "asignatura_1": "ABM101",
-      "semestre_1": 1,
-      "nivel_iho_1": 2,
-      "asignatura_2": "HDP302",
-      "semestre_2": 3,
-      "nivel_iho_2": 4,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 86,
-      "horas_duplicadas_estimadas": 9.0
-    },
-    {
-      "contenido": "Datos de la columna de agua.",
       "contenido_relacionado": "Influencia de la rugosidad de la superficie del mar, turbidez de la columna de agua en el reticulado y penetración del haz.",
       "asignatura_1": "ABM101",
       "semestre_1": 1,
@@ -473,19 +421,6 @@
       "tipo_reiteracion": "REVISAR",
       "similitud": 84,
       "horas_duplicadas_estimadas": 6.75
-    },
-    {
-      "contenido": "Retrodispersión y clasificación del lecho marino.",
-      "contenido_relacionado": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "asignatura_1": "ABM101",
-      "semestre_1": 1,
-      "nivel_iho_1": 2,
-      "asignatura_2": "HDP302",
-      "semestre_2": 3,
-      "nivel_iho_2": 4,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 84,
-      "horas_duplicadas_estimadas": 9.0
     },
     {
       "contenido": "Resolución en relación con el ancho del haz, ángulo de frecuencia de muestreo de incidencia y longitud de pulso.",
@@ -551,32 +486,6 @@
       "tipo_reiteracion": "REVISAR",
       "similitud": 84,
       "horas_duplicadas_estimadas": 6.75
-    },
-    {
-      "contenido": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "contenido_relacionado": "Características del fondo marino y formas del lecho.",
-      "asignatura_1": "HDP302",
-      "semestre_1": 3,
-      "nivel_iho_1": 4,
-      "asignatura_2": "MGG103",
-      "semestre_2": 1,
-      "nivel_iho_2": 1,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 84,
-      "horas_duplicadas_estimadas": 3.75
-    },
-    {
-      "contenido": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "contenido_relacionado": "Relación entre la firma de ondas completas y las características del lecho marino.",
-      "asignatura_1": "HDP302",
-      "semestre_1": 3,
-      "nivel_iho_1": 4,
-      "asignatura_2": "RS201",
-      "semestre_2": 2,
-      "nivel_iho_2": 2,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 84,
-      "horas_duplicadas_estimadas": 9.0
     },
     {
       "contenido": "Trabajos y productos hidrográficos.",
@@ -709,19 +618,6 @@
       "horas_duplicadas_estimadas": 3.0
     },
     {
-      "contenido": "Ecuación de sonar activo, incluyendo fuente de sonido, causas de pérdida de propagación en relación con las propiedades del agua junto con las características del piso marino y objetivos, nivel de ruido acústico y directividad.",
-      "contenido_relacionado": "Propiedades de reflectancia del piso marino.",
-      "asignatura_1": "ABM101",
-      "semestre_1": 1,
-      "nivel_iho_1": 2,
-      "asignatura_2": "RS201",
-      "semestre_2": 2,
-      "nivel_iho_2": 2,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 82,
-      "horas_duplicadas_estimadas": 4.5
-    },
-    {
       "contenido": "Sistema de Posicionamiento submarino (USBL).",
       "contenido_relacionado": "INS submarino.",
       "asignatura_1": "ABM101",
@@ -772,19 +668,6 @@
       "tipo_reiteracion": "REVISAR",
       "similitud": 82,
       "horas_duplicadas_estimadas": 3.0
-    },
-    {
-      "contenido": "Frecuencia y longitud de onda en relación con la resolución y la penetración.",
-      "contenido_relacionado": "Imágenes multiespectrales y penetración del agua en relación con la longitud de onda.",
-      "asignatura_1": "MGG103",
-      "semestre_1": 1,
-      "nivel_iho_1": 1,
-      "asignatura_2": "RS201",
-      "semestre_2": 2,
-      "nivel_iho_2": 2,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 82,
-      "horas_duplicadas_estimadas": 4.5
     },
     {
       "contenido": "Perfil de velocidad del sonido y saturación.",
@@ -1178,19 +1061,6 @@
     },
     {
       "contenido": "Estructura de la columna de agua.",
-      "contenido_relacionado": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "asignatura_1": "GP204",
-      "semestre_1": 2,
-      "nivel_iho_1": 1,
-      "asignatura_2": "HDP302",
-      "semestre_2": 3,
-      "nivel_iho_2": 4,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 77,
-      "horas_duplicadas_estimadas": 4.5
-    },
-    {
-      "contenido": "Estructura de la columna de agua.",
       "contenido_relacionado": "Influencia de la rugosidad de la superficie del mar, turbidez de la columna de agua en el reticulado y penetración del haz.",
       "asignatura_1": "GP204",
       "semestre_1": 2,
@@ -1320,19 +1190,6 @@
       "horas_duplicadas_estimadas": 6.75
     },
     {
-      "contenido": "Relación entre el contenido de la retrodispersión y las características del lecho marino, las propiedades de la columna de agua y los parámetros de señales acústicas.",
-      "contenido_relacionado": "Características ópticas del lecho marino y detección del fondo.",
-      "asignatura_1": "HDP302",
-      "semestre_1": 3,
-      "nivel_iho_1": 4,
-      "asignatura_2": "RS201",
-      "semestre_2": 2,
-      "nivel_iho_2": 2,
-      "tipo_reiteracion": "REVISAR",
-      "similitud": 75,
-      "horas_duplicadas_estimadas": 9.0
-    },
-    {
       "contenido": "Instrumentos de nivelación.",
       "contenido_relacionado": "Incertidumbres asociadas con los instrumentos de medición del nivel del agua.",
       "asignatura_1": "LSM102",
@@ -1378,24 +1235,24 @@
       [
         0,
         4,
-        7,
+        5,
         10,
         0,
         0,
         1,
         0,
         13,
-        3,
+        2,
         0,
         0
       ],
       [
         4,
         0,
-        3,
+        2,
         2,
         0,
-        2,
+        1,
         0,
         0,
         0,
@@ -1404,16 +1261,16 @@
         1
       ],
       [
-        7,
-        3,
+        5,
+        2,
         0,
         5,
         1,
         0,
+        1,
+        0,
+        0,
         2,
-        0,
-        0,
-        4,
         1,
         0
       ],
@@ -1423,7 +1280,7 @@
         5,
         0,
         2,
-        2,
+        1,
         0,
         0,
         3,
@@ -1447,29 +1304,29 @@
       ],
       [
         0,
-        2,
+        1,
         0,
-        2,
+        1,
         0,
         0,
         1,
         5,
         0,
-        4,
+        3,
         1,
         1
       ],
       [
         1,
         0,
-        2,
+        1,
         0,
         0,
         1,
         0,
         0,
         0,
-        6,
+        5,
         2,
         0
       ],
@@ -1502,13 +1359,13 @@
         3
       ],
       [
-        3,
+        2,
         1,
-        4,
+        2,
         5,
         1,
-        4,
-        6,
+        3,
+        5,
         0,
         0,
         0,
@@ -1565,7 +1422,7 @@
         0,
         0,
         0,
-        2,
+        1,
         0,
         0,
         0,
@@ -1617,7 +1474,7 @@
       ],
       [
         0,
-        2,
+        1,
         0,
         0,
         0,

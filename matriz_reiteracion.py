@@ -97,6 +97,9 @@ def main() -> None:
                     )
 
     reiteraciones: list[dict[str, Any]] = []
+    pares_vistos: set[frozenset] = set()
+    total_bruto = 0
+
     for i in range(len(contenidos)):
         for j in range(i + 1, len(contenidos)):
             c1 = contenidos[i]
@@ -106,6 +109,17 @@ def main() -> None:
             similitud = fuzz.token_set_ratio(c1["contenido"], c2["contenido"])
             if similitud < FUZZY_THRESHOLD:
                 continue
+
+            total_bruto += 1
+
+            # Deduplicar: frozenset trata (A→B) y (B→A) como el mismo par
+            par_key: frozenset = frozenset([
+                (c1["codigo"], c1["contenido"]),
+                (c2["codigo"], c2["contenido"]),
+            ])
+            if par_key in pares_vistos:
+                continue
+            pares_vistos.add(par_key)
 
             tipo = clasificar_reiteracion(
                 similitud=similitud,
@@ -137,6 +151,9 @@ def main() -> None:
                     "horas_duplicadas_estimadas": horas_dup,
                 }
             )
+
+    print(f"  Reiteraciones antes (bruto): {total_bruto} pares")
+    print(f"  Reiteraciones después de deduplicar: {len(reiteraciones)} pares únicos")
 
     reiteraciones.sort(
         key=lambda r: (
