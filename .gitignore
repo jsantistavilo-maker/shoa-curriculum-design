@@ -1,0 +1,37 @@
+# ── Documentos originales institucionales (NO subir a GitHub) ────────────────
+programas/
+*.docx
+*.doc
+*.pdf
+*.xlsx
+*.xls
+
+# ── Archivos de salida locales ────────────────────────────────────────────────
+Propuesta_Curricular_SHOA.docx
+niveles_pendientes.txt
+*.log
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ── Sistema operativo ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Incluir explícitamente los JSON de datos procesados ──────────────────────
+!curriculum_data.json
+!niveles_iho_norma.json
+!programas_estructurados.json
+!progresion_analisis.json
+!reiteracion_matriz.json
+!profundidad_iho.json
+!propuesta_curricular.json

@@ -1,0 +1,191 @@
+{
+  "resumen": {
+    "total_asignaturas": 13,
+    "total_dependencias": 0,
+    "total_problemas": 0,
+    "total_sin_prerrequisitos_claros": 5
+  },
+  "asignaturas": [
+    {
+      "codigo": "ABM101",
+      "nombre": "Métodos Batimétricos Acústicos",
+      "semestre_actual": 1,
+      "nivel_iho_predominante": 2,
+      "topicos_iho": [
+        "H2",
+        "H6",
+        "H1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "GP204",
+      "nombre": "Posicionamiento Geodésico",
+      "semestre_actual": 2,
+      "nivel_iho_predominante": 1,
+      "topicos_iho": [
+        "F1",
+        "H5",
+        "H1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "HDP302",
+      "nombre": "Procesamiento de Datos Hidrográficos",
+      "semestre_actual": 3,
+      "nivel_iho_predominante": 4,
+      "topicos_iho": [
+        "H6",
+        "H4",
+        "H2"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "HO202",
+      "nombre": "Operaciones Hidrográficas",
+      "semestre_actual": 2,
+      "nivel_iho_predominante": 3,
+      "topicos_iho": [
+        "H4"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "LR303",
+      "nombre": "Leyes y Reglamentación para Actividades Hidrográficas",
+      "semestre_actual": 3,
+      "nivel_iho_predominante": 5,
+      "topicos_iho": [
+        "H8"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "LSM102",
+      "nombre": "Métodos de Levantamiento Topográfico",
+      "semestre_actual": 1,
+      "nivel_iho_predominante": 1,
+      "topicos_iho": [
+        "F1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "MGG103",
+      "nombre": "Geología Marina y Geofísica",
+      "semestre_actual": 1,
+      "nivel_iho_predominante": 1,
+      "topicos_iho": [
+        "F3",
+        "H4"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "OA203",
+      "nombre": "Ajuste de Observaciones",
+      "semestre_actual": 2,
+      "nivel_iho_predominante": 1,
+      "topicos_iho": [
+        "F1",
+        "H6"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "PH401",
+      "nombre": "Proyecto Hidrográfico",
+      "semestre_actual": 4,
+      "nivel_iho_predominante": 3,
+      "topicos_iho": [
+        "H4",
+        "H7",
+        "H6",
+        "H5",
+        "H1",
+        "F3",
+        "F1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "PhyOce104",
+      "nombre": "Oceanografía Física",
+      "semestre_actual": 1,
+      "nivel_iho_predominante": 1,
+      "topicos_iho": [
+        "F2"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "RS201",
+      "nombre": "Teledetección",
+      "semestre_actual": 2,
+      "nivel_iho_predominante": 2,
+      "topicos_iho": [
+        "H3",
+        "H4"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "SG304",
+      "nombre": "Geodesia Satelital",
+      "semestre_actual": 3,
+      "nivel_iho_predominante": 2,
+      "topicos_iho": [
+        "H1",
+        "F1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "WTC205",
+      "nombre": "Niveles de Agua, Mareas y Corrientes (NA - MC 205)",
+      "semestre_actual": 2,
+      "nivel_iho_predominante": 3,
+      "topicos_iho": [
+        "H5"
+      ],
+      "prerrequisitos": []
+    }
+  ],
+  "dependencias": [],
+  "aristas_con_problema": [],
+  "problemas_progresion": [],
+  "asignaturas_sin_prerrequisitos_claros": [
+    {
+      "codigo": "HDP302",
+      "nombre": "Procesamiento de Datos Hidrográficos",
+      "nivel_iho_predominante": 4,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    },
+    {
+      "codigo": "HO202",
+      "nombre": "Operaciones Hidrográficas",
+      "nivel_iho_predominante": 3,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    },
+    {
+      "codigo": "LR303",
+      "nombre": "Leyes y Reglamentación para Actividades Hidrográficas",
+      "nivel_iho_predominante": 5,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    },
+    {
+      "codigo": "PH401",
+      "nombre": "Proyecto Hidrográfico",
+      "nivel_iho_predominante": 3,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    },
+    {
+      "codigo": "WTC205",
+      "nombre": "Niveles de Agua, Mareas y Corrientes (NA - MC 205)",
+      "nivel_iho_predominante": 3,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    }
+  ]
+}

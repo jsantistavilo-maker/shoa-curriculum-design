@@ -1,0 +1,1239 @@
+{
+  "resumen": {
+    "total_topicos_analizados": 103,
+    "sobredimensionados": 16,
+    "alineados": 43,
+    "subdimensionados": 44,
+    "sin_nivel_en_norma": 0,
+    "escala_niveles": "B=Basic < I=Intermediate < A=Advanced (IHO S-5A)"
+  },
+  "topicos": [
+    {
+      "codigo_topico_iho": "F1.1a",
+      "topico_iho": "F1",
+      "descripcion": "The gravity field of the Earth (B)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.1b",
+      "topico_iho": "F1",
+      "descripcion": "Gravity observations and their reduction (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.1c",
+      "topico_iho": "F1",
+      "descripcion": "Height systems and height determination (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.1d",
+      "topico_iho": "F1",
+      "descripcion": "Geopotential and geoidal modelling (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.2a",
+      "topico_iho": "F1",
+      "descripcion": "Coordinate Systems for Positioning (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.2b",
+      "topico_iho": "F1",
+      "descripcion": "Datum transformation techniques (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.2c",
+      "topico_iho": "F1",
+      "descripcion": "Geodetic computations on the ellipsoid (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.2d",
+      "topico_iho": "F1",
+      "descripcion": "Three-Dimensional Geodetic Modeling (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.3a",
+      "topico_iho": "F1",
+      "descripcion": "Trigonometric surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.3b",
+      "topico_iho": "F1",
+      "descripcion": "Existing survey control (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.3c",
+      "topico_iho": "F1",
+      "descripcion": "Establishing survey control (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102",
+        "PH401",
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.3d",
+      "topico_iho": "F1",
+      "descripcion": "Instrument tests (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.3e",
+      "topico_iho": "F1",
+      "descripcion": "Historical surveys (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.4a",
+      "topico_iho": "F1",
+      "descripcion": "Levelling instruments (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.4b",
+      "topico_iho": "F1",
+      "descripcion": "Height reduction (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.5a",
+      "topico_iho": "F1",
+      "descripcion": "Map Projections (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "LSM102"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.6a",
+      "topico_iho": "F1",
+      "descripcion": "Trigonometry (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.6b",
+      "topico_iho": "F1",
+      "descripcion": "Theory of observations (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LSM102",
+        "OA203"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F1.6c",
+      "topico_iho": "F1",
+      "descripcion": "Least squares (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "OA203"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F2.1a",
+      "topico_iho": "F2",
+      "descripcion": "Water masses and circulation (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PhyOce104"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F2.1b",
+      "topico_iho": "F2",
+      "descripcion": "Physical properties of sea water (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PhyOce104"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F2.1c",
+      "topico_iho": "F2",
+      "descripcion": "Oceanographic measurements (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PhyOce104"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F2.1d",
+      "topico_iho": "F2",
+      "descripcion": "Waves (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PhyOce104"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.1a",
+      "topico_iho": "F3",
+      "descripcion": "Earth structure (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "MGG103"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.1b",
+      "topico_iho": "F3",
+      "descripcion": "Geomorphology (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "MGG103",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.1c",
+      "topico_iho": "F3",
+      "descripcion": "Substrates (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "MGG103",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.2a",
+      "topico_iho": "F3",
+      "descripcion": "Gravity fields and gravity surveys (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "MGG103"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.2b",
+      "topico_iho": "F3",
+      "descripcion": "Magnetic fields (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "MGG103"
+      ]
+    },
+    {
+      "codigo_topico_iho": "F3.2c",
+      "topico_iho": "F3",
+      "descripcion": "Seismic surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "MGG103"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.1a",
+      "topico_iho": "H1",
+      "descripcion": "Common reference frames for sensors (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.1b",
+      "topico_iho": "H1",
+      "descripcion": "Integration of reference frames (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.2a",
+      "topico_iho": "H1",
+      "descripcion": "GNSS Signals (I, B)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.2b",
+      "topico_iho": "H1",
+      "descripcion": "GNSS observables (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.2c",
+      "topico_iho": "H1",
+      "descripcion": "Relative and absolute techniques (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.2d",
+      "topico_iho": "H1",
+      "descripcion": "Installation and operation (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401",
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.2e",
+      "topico_iho": "H1",
+      "descripcion": "Quality control (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.3a",
+      "topico_iho": "H1",
+      "descripcion": "Accelerometers, gyroscopes, inclinometers, compass (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.3b",
+      "topico_iho": "H1",
+      "descripcion": "Strapdown inertial measurement units (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.3c",
+      "topico_iho": "H1",
+      "descripcion": "Kalman filtering (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.3d",
+      "topico_iho": "H1",
+      "descripcion": "Aided inertial navigation (I)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "SG304"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.4a",
+      "topico_iho": "H1",
+      "descripcion": "Acoustic positioning principles (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.4b",
+      "topico_iho": "H1",
+      "descripcion": "Acoustic positioning systems (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.4c",
+      "topico_iho": "H1",
+      "descripcion": "Acoustic positioning error analysis (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.4d",
+      "topico_iho": "H1",
+      "descripcion": "Acoustic positioning applications (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H1.5a",
+      "topico_iho": "H1",
+      "descripcion": "Track guidance (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.1a",
+      "topico_iho": "H2",
+      "descripcion": "Transducers and generation of acoustic waves (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.1b",
+      "topico_iho": "H2",
+      "descripcion": "Propagation of acoustic waves (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.1c",
+      "topico_iho": "H2",
+      "descripcion": "Acoustic noise (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.1d",
+      "topico_iho": "H2",
+      "descripcion": "Reflection, scattering and system performance (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.1e",
+      "topico_iho": "H2",
+      "descripcion": "Refraction and ray-tracing (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.2a",
+      "topico_iho": "H2",
+      "descripcion": "Single beam echo sounder principles (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.2b",
+      "topico_iho": "H2",
+      "descripcion": "Single beam returns interpretation (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.2c",
+      "topico_iho": "H2",
+      "descripcion": "Single beam survey system (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.2d",
+      "topico_iho": "H2",
+      "descripcion": "Processing of single beam data (I, A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.3a",
+      "topico_iho": "H2",
+      "descripcion": "Side-scan sonar systems (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.3b",
+      "topico_iho": "H2",
+      "descripcion": "Synthetic Aperture Sonar (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.4a",
+      "topico_iho": "H2",
+      "descripcion": "Multi-beam echo sounders (A, I)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.4b",
+      "topico_iho": "H2",
+      "descripcion": "Multi-beam system parameters (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.4c",
+      "topico_iho": "H2",
+      "descripcion": "Multi-beam systems (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.4d",
+      "topico_iho": "H2",
+      "descripcion": "Multi-beam data processing (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.4e",
+      "topico_iho": "H2",
+      "descripcion": "Interferometric Sonar (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H2.5a",
+      "topico_iho": "H2",
+      "descripcion": "Backscatter from SSS, interferometric swath sonars and MBES (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H3.1a",
+      "topico_iho": "H3",
+      "descripcion": "Airborne LiDAR systems (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H3.1b",
+      "topico_iho": "H3",
+      "descripcion": "Airborne LiDAR data products (I, A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H3.1c",
+      "topico_iho": "H3",
+      "descripcion": "Terrestrial LiDAR (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H3.2a",
+      "topico_iho": "H3",
+      "descripcion": "Remotely sensed bathymetry (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H3.2b",
+      "topico_iho": "H3",
+      "descripcion": "Satellite altimetry (B)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.1a",
+      "topico_iho": "H4",
+      "descripcion": "Hydrographic survey requirements (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.1b",
+      "topico_iho": "H4",
+      "descripcion": "Hydrographic survey project management (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2a",
+      "topico_iho": "H4",
+      "descripcion": "Survey planning (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2b",
+      "topico_iho": "H4",
+      "descripcion": "Single Beam operations (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2c",
+      "topico_iho": "H4",
+      "descripcion": "Multi-beam and Interferometric operations (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2d",
+      "topico_iho": "H4",
+      "descripcion": "Magnetic surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "MGG103"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2e",
+      "topico_iho": "H4",
+      "descripcion": "Airborne LiDAR surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2f",
+      "topico_iho": "H4",
+      "descripcion": "Side scan sonar operations (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "A",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.2g",
+      "topico_iho": "H4",
+      "descripcion": "Side-scan sonar data interpretation (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.3a",
+      "topico_iho": "H4",
+      "descripcion": "Classification from acoustic data (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "A",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "RS201"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.3c",
+      "topico_iho": "H4",
+      "descripcion": "Seabed sampling (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "A",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HO202",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H4.3d",
+      "topico_iho": "H4",
+      "descripcion": "Seabed characterization (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "HDP302",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.2a",
+      "topico_iho": "H5",
+      "descripcion": "Water level gauges (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401",
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.2b",
+      "topico_iho": "H5",
+      "descripcion": "Tidal measurement (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401",
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.2c",
+      "topico_iho": "H5",
+      "descripcion": "Uncertainty in water level (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PH401",
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.3a",
+      "topico_iho": "H5",
+      "descripcion": "Harmonic analysis (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.3b",
+      "topico_iho": "H5",
+      "descripcion": "Ocean water level (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.4a",
+      "topico_iho": "H5",
+      "descripcion": "Separation models (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.4b",
+      "topico_iho": "H5",
+      "descripcion": "Vertical Datums (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.4c",
+      "topico_iho": "H5",
+      "descripcion": "Sounding reduction (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GP204",
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.5a",
+      "topico_iho": "H5",
+      "descripcion": "Tidally induced currents (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H5.5b",
+      "topico_iho": "H5",
+      "descripcion": "Current measurement, portrayal and surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PH401",
+        "WTC205"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.1a",
+      "topico_iho": "H6",
+      "descripcion": "Hydrographic Data acquisition (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101",
+        "HDP302",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.1b",
+      "topico_iho": "H6",
+      "descripcion": "Real-time data monitoring (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "ABM101",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.1c",
+      "topico_iho": "H6",
+      "descripcion": "Survey data storage and transfer (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.2a",
+      "topico_iho": "H6",
+      "descripcion": "Filtering and estimation of single beam data (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.2b",
+      "topico_iho": "H6",
+      "descripcion": "Filtering and estimation of multi-beam data (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302",
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.2c",
+      "topico_iho": "H6",
+      "descripcion": "Spatial data quality control (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "HDP302",
+        "OA203"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.1a",
+      "topico_iho": "H7",
+      "descripcion": "Databases (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.1b",
+      "topico_iho": "H7",
+      "descripcion": "Marine GIS basics (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SOBREDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.3a",
+      "topico_iho": "H7",
+      "descripcion": "Spatial data integration (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.3c",
+      "topico_iho": "H7",
+      "descripcion": "Deliverables (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "I",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H8.1a",
+      "topico_iho": "H8",
+      "descripcion": "Responsibilities of the hydrographic surveyor (B, I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LR303"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H8.1b",
+      "topico_iho": "H8",
+      "descripcion": "Contracts (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LR303"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H8.2a",
+      "topico_iho": "H8",
+      "descripcion": "Delimitations (B)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LR303"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H8.2b",
+      "topico_iho": "H8",
+      "descripcion": "Impact of surveys (I)",
+      "nivel_iho_requerido": "I",
+      "nivel_actual_programa": "I",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "LR303"
+      ]
+    }
+  ],
+  "por_asignatura": {
+    "ABM101": {
+      "SOBREDIMENSIONADO": 0,
+      "ALINEADO": 5,
+      "SUBDIMENSIONADO": 15
+    },
+    "GP204": {
+      "SOBREDIMENSIONADO": 5,
+      "ALINEADO": 6,
+      "SUBDIMENSIONADO": 6
+    },
+    "HDP302": {
+      "SOBREDIMENSIONADO": 0,
+      "ALINEADO": 1,
+      "SUBDIMENSIONADO": 9
+    },
+    "HO202": {
+      "SOBREDIMENSIONADO": 2,
+      "ALINEADO": 6,
+      "SUBDIMENSIONADO": 0
+    },
+    "LR303": {
+      "SOBREDIMENSIONADO": 0,
+      "ALINEADO": 4,
+      "SUBDIMENSIONADO": 0
+    },
+    "LSM102": {
+      "SOBREDIMENSIONADO": 1,
+      "ALINEADO": 6,
+      "SUBDIMENSIONADO": 2
+    },
+    "MGG103": {
+      "SOBREDIMENSIONADO": 3,
+      "ALINEADO": 3,
+      "SUBDIMENSIONADO": 1
+    },
+    "OA203": {
+      "SOBREDIMENSIONADO": 0,
+      "ALINEADO": 1,
+      "SUBDIMENSIONADO": 2
+    },
+    "PH401": {
+      "SOBREDIMENSIONADO": 2,
+      "ALINEADO": 13,
+      "SUBDIMENSIONADO": 11
+    },
+    "PhyOce104": {
+      "SOBREDIMENSIONADO": 1,
+      "ALINEADO": 2,
+      "SUBDIMENSIONADO": 1
+    },
+    "RS201": {
+      "SOBREDIMENSIONADO": 2,
+      "ALINEADO": 3,
+      "SUBDIMENSIONADO": 2
+    },
+    "SG304": {
+      "SOBREDIMENSIONADO": 0,
+      "ALINEADO": 3,
+      "SUBDIMENSIONADO": 4
+    },
+    "WTC205": {
+      "SOBREDIMENSIONADO": 2,
+      "ALINEADO": 3,
+      "SUBDIMENSIONADO": 3
+    }
+  }
+}

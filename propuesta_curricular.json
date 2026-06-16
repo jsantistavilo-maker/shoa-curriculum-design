@@ -1,0 +1,739 @@
+{
+  "resumen": {
+    "total_horas_actuales": 2140,
+    "total_horas_propuestas": 1540,
+    "reduccion_horas": 600,
+    "reduccion_porcentaje": 28.04,
+    "cobertura_iho_mantenida_porcentaje": 57.28,
+    "distribucion_semestres_horas": {
+      "semestre_1": 626,
+      "semestre_2": 739,
+      "semestre_3": 175
+    },
+    "curriculo_cabe_en_1_5_anios": true
+  },
+  "comparativa_internacional": {
+    "referencia_horas_shoa_topics": 2364.0,
+    "promedio_internacional_topics": 1180.55,
+    "horas_propuesta_total": 1540,
+    "brecha_vs_promedio_internacional": 359.45
+  },
+  "propuesta_asignaturas": [
+    {
+      "asignatura": "ABM101",
+      "nombre_asignatura": "Métodos Batimétricos Acústicos",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 98,
+        "P": 69,
+        "SG": 13,
+        "total": 180
+      },
+      "horas_propuestas": {
+        "T": 64,
+        "P": 45,
+        "SG": 8,
+        "total": 117
+      },
+      "semestre_actual": 1,
+      "semestre_propuesto": 1,
+      "justificacion": "Fusionar con PhyOce104: 2 contenido(s) innecesariamente repetido(s) (36 h duplicadas estimadas). Contenido compartido: «Mediciones de velocidad del sonido.».",
+      "topicos_iho_afectados": [
+        "H2",
+        "H6",
+        "H1"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "GP204",
+      "nombre_asignatura": "Posicionamiento Geodésico",
+      "accion": "REDUCIR",
+      "horas_actuales": {
+        "T": 54,
+        "P": 57,
+        "SG": 9,
+        "total": 120
+      },
+      "horas_propuestas": {
+        "T": 40,
+        "P": 43,
+        "SG": 7,
+        "total": 90
+      },
+      "semestre_actual": 2,
+      "semestre_propuesto": 1,
+      "justificacion": "Asignatura crítica sobreestimada en fase previa.",
+      "topicos_iho_afectados": [
+        "F1",
+        "H5",
+        "H1"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "LSM102",
+      "nombre_asignatura": "Métodos de Levantamiento Topográfico",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 56,
+        "P": 59,
+        "SG": 7,
+        "total": 122
+      },
+      "horas_propuestas": {
+        "T": 36,
+        "P": 38,
+        "SG": 5,
+        "total": 79
+      },
+      "semestre_actual": 1,
+      "semestre_propuesto": 1,
+      "justificacion": "Fusionar con OA203: 4 contenido(s) innecesariamente repetido(s) (29 h duplicadas estimadas). Contenido compartido: «Exactitud, precisión, confiabilidad, repetibilidad.».",
+      "topicos_iho_afectados": [
+        "F1"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "MGG103",
+      "nombre_asignatura": "Geología Marina y Geofísica",
+      "accion": "REDUCIR",
+      "horas_actuales": {
+        "T": 71,
+        "P": 18,
+        "SG": 11,
+        "total": 100
+      },
+      "horas_propuestas": {
+        "T": 53,
+        "P": 14,
+        "SG": 8,
+        "total": 75
+      },
+      "semestre_actual": 1,
+      "semestre_propuesto": 1,
+      "justificacion": "Asignatura crítica sobreestimada en fase previa.",
+      "topicos_iho_afectados": [
+        "F3",
+        "H4"
+      ],
+      "impacto_en_progresion": "Impacto neutro en secuencia."
+    },
+    {
+      "asignatura": "OA203",
+      "nombre_asignatura": "Ajuste de Observaciones",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 47,
+        "P": 50,
+        "SG": 3,
+        "total": 100
+      },
+      "horas_propuestas": {
+        "T": 31,
+        "P": 32,
+        "SG": 2,
+        "total": 65
+      },
+      "semestre_actual": 2,
+      "semestre_propuesto": 1,
+      "justificacion": "Fusionar con LSM102: 4 contenido(s) innecesariamente repetido(s) (29 h duplicadas estimadas). Contenido compartido: «Exactitud, precisión, confiabilidad, repetibilidad.».",
+      "topicos_iho_afectados": [
+        "F1",
+        "H6"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "PhyOce104",
+      "nombre_asignatura": "Oceanografía Física",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 51,
+        "P": 45,
+        "SG": 4,
+        "total": 100
+      },
+      "horas_propuestas": {
+        "T": 33,
+        "P": 29,
+        "SG": 3,
+        "total": 65
+      },
+      "semestre_actual": 1,
+      "semestre_propuesto": 1,
+      "justificacion": "Fusionar con ABM101: 2 contenido(s) innecesariamente repetido(s) (36 h duplicadas estimadas). Contenido compartido: «Mediciones de velocidad del sonido.».",
+      "topicos_iho_afectados": [
+        "F2"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "RS201",
+      "nombre_asignatura": "Teledetección",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 44,
+        "P": 35,
+        "SG": 2,
+        "total": 81
+      },
+      "horas_propuestas": {
+        "T": 29,
+        "P": 23,
+        "SG": 1,
+        "total": 53
+      },
+      "semestre_actual": 2,
+      "semestre_propuesto": 1,
+      "justificacion": "Fusionar con HO202: 2 contenido(s) innecesariamente repetido(s) (58 h duplicadas estimadas). Contenido compartido: «Técnicas y requerimientos  de calibración.».",
+      "topicos_iho_afectados": [
+        "H3",
+        "H4"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "SG304",
+      "nombre_asignatura": "Geodesia Satelital",
+      "accion": "REDUCIR",
+      "horas_actuales": {
+        "T": 46,
+        "P": 58,
+        "SG": 6,
+        "total": 110
+      },
+      "horas_propuestas": {
+        "T": 34,
+        "P": 43,
+        "SG": 5,
+        "total": 82
+      },
+      "semestre_actual": 3,
+      "semestre_propuesto": 1,
+      "justificacion": "Asignatura crítica sobreestimada en fase previa.",
+      "topicos_iho_afectados": [
+        "H1",
+        "F1"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "HO202",
+      "nombre_asignatura": "Operaciones Hidrográficas",
+      "accion": "FUSIONAR",
+      "horas_actuales": {
+        "T": 84,
+        "P": 66,
+        "SG": 10,
+        "total": 160
+      },
+      "horas_propuestas": {
+        "T": 55,
+        "P": 43,
+        "SG": 6,
+        "total": 104
+      },
+      "semestre_actual": 2,
+      "semestre_propuesto": 2,
+      "justificacion": "Fusionar con RS201: 2 contenido(s) innecesariamente repetido(s) (58 h duplicadas estimadas). Contenido compartido: «Técnicas y requerimientos  de calibración.».",
+      "topicos_iho_afectados": [
+        "H4"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "PH401",
+      "nombre_asignatura": "Proyecto Hidrográfico",
+      "accion": "REDUCIR (Práctica de Campo)",
+      "horas_actuales": {
+        "T": 0,
+        "P": 534,
+        "SG": 208,
+        "total": 742
+      },
+      "horas_propuestas": {
+        "T": 0,
+        "P": 400,
+        "SG": 156,
+        "total": 556
+      },
+      "semestre_actual": 4,
+      "semestre_propuesto": 2,
+      "justificacion": "Asignatura de práctica hidrográfica de campo. Se propone reducción de horas manteniendo todos los contenidos, ajustando la duración del proyecto para converger con el promedio internacional. No aplica eliminación de contenidos por naturaleza práctica de la asignatura.",
+      "topicos_iho_afectados": [
+        "H4",
+        "H7",
+        "H6",
+        "H5",
+        "H1",
+        "F3",
+        "F1"
+      ],
+      "impacto_en_progresion": "Mejora secuencia de fundamentos-operaciones-procesamiento."
+    },
+    {
+      "asignatura": "WTC205",
+      "nombre_asignatura": "Niveles de Agua, Mareas y Corrientes (NA - MC 205)",
+      "accion": "REDUCIR",
+      "horas_actuales": {
+        "T": 43,
+        "P": 58,
+        "SG": 4,
+        "total": 105
+      },
+      "horas_propuestas": {
+        "T": 32,
+        "P": 44,
+        "SG": 3,
+        "total": 79
+      },
+      "semestre_actual": 2,
+      "semestre_propuesto": 2,
+      "justificacion": "Asignatura crítica sobreestimada en fase previa.",
+      "topicos_iho_afectados": [
+        "H5"
+      ],
+      "impacto_en_progresion": "Impacto neutro en secuencia."
+    },
+    {
+      "asignatura": "HDP302",
+      "nombre_asignatura": "Procesamiento de Datos Hidrográficos",
+      "accion": "REDUCIR",
+      "horas_actuales": {
+        "T": 43,
+        "P": 117,
+        "SG": 20,
+        "total": 180
+      },
+      "horas_propuestas": {
+        "T": 32,
+        "P": 88,
+        "SG": 15,
+        "total": 135
+      },
+      "semestre_actual": 3,
+      "semestre_propuesto": 3,
+      "justificacion": "Asignatura crítica sobreestimada en fase previa.",
+      "topicos_iho_afectados": [
+        "H6",
+        "H4",
+        "H2"
+      ],
+      "impacto_en_progresion": "Impacto neutro en secuencia."
+    },
+    {
+      "asignatura": "LR303",
+      "nombre_asignatura": "Leyes y Reglamentación para Actividades Hidrográficas",
+      "accion": "MANTENER",
+      "horas_actuales": {
+        "T": 27,
+        "P": 11,
+        "SG": 2,
+        "total": 40
+      },
+      "horas_propuestas": {
+        "T": 27,
+        "P": 11,
+        "SG": 2,
+        "total": 40
+      },
+      "semestre_actual": 3,
+      "semestre_propuesto": 3,
+      "justificacion": "Asignatura alineada sin hallazgos críticos de progresión o reiteración.",
+      "topicos_iho_afectados": [
+        "H8"
+      ],
+      "impacto_en_progresion": "Impacto neutro en secuencia."
+    }
+  ],
+  "malla_v_a": [
+    {
+      "codigo": "GP204",
+      "nombre": "Posicionamiento Geodésico",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 40,
+        "P": 43,
+        "SG": 7,
+        "total": 90
+      },
+      "nivel_iho": 1,
+      "es_fusion": false,
+      "codigos_base": [
+        "GP204"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "LSM102+OA203",
+      "nombre": "Levantamientos y Oceanografía Aplicada",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 67,
+        "P": 70,
+        "SG": 7,
+        "total": 144
+      },
+      "nivel_iho": 1,
+      "es_fusion": true,
+      "codigos_base": [
+        "LSM102",
+        "OA203"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "MGG103",
+      "nombre": "Geología Marina y Geofísica",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 53,
+        "P": 14,
+        "SG": 8,
+        "total": 75
+      },
+      "nivel_iho": 1,
+      "es_fusion": false,
+      "codigos_base": [
+        "MGG103"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "ABM101+PhyOce104",
+      "nombre": "Batimetría Acústica y Física Oceánica",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 97,
+        "P": 74,
+        "SG": 11,
+        "total": 182
+      },
+      "nivel_iho": 2,
+      "es_fusion": true,
+      "codigos_base": [
+        "ABM101",
+        "PhyOce104"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "HO202+RS201",
+      "nombre": "Hidrografía y Sensores Remotos",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 84,
+        "P": 66,
+        "SG": 7,
+        "total": 157
+      },
+      "nivel_iho": 3,
+      "es_fusion": true,
+      "codigos_base": [
+        "HO202",
+        "RS201"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "SG304",
+      "nombre": "Geodesia Satelital",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 34,
+        "P": 43,
+        "SG": 5,
+        "total": 82
+      },
+      "nivel_iho": 2,
+      "es_fusion": false,
+      "codigos_base": [
+        "SG304"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "WTC205",
+      "nombre": "Niveles de Agua, Mareas y Corrientes (NA - MC 205)",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 32,
+        "P": 44,
+        "SG": 3,
+        "total": 79
+      },
+      "nivel_iho": 3,
+      "es_fusion": false,
+      "codigos_base": [
+        "WTC205"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "HDP302",
+      "nombre": "Procesamiento de Datos Hidrográficos",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 32,
+        "P": 88,
+        "SG": 15,
+        "total": 135
+      },
+      "nivel_iho": 4,
+      "es_fusion": false,
+      "codigos_base": [
+        "HDP302"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "LR303",
+      "nombre": "Leyes y Reglamentación para Actividades Hidrográficas",
+      "accion": "MANTENER",
+      "horas_propuestas": {
+        "T": 27,
+        "P": 11,
+        "SG": 2,
+        "total": 40
+      },
+      "nivel_iho": 5,
+      "es_fusion": false,
+      "codigos_base": [
+        "LR303"
+      ],
+      "semestre": 3,
+      "nota": ""
+    },
+    {
+      "codigo": "PH401",
+      "nombre": "Proyecto Hidrográfico",
+      "accion": "REDUCIR (Práctica de Campo)",
+      "horas_propuestas": {
+        "T": 0,
+        "P": 400,
+        "SG": 156,
+        "total": 556
+      },
+      "nivel_iho": 3,
+      "es_fusion": false,
+      "codigos_base": [
+        "PH401"
+      ],
+      "semestre": 3,
+      "nota": "Proyecto hidrográfico completo — horas de práctica de campo."
+    }
+  ],
+  "malla_v_b": [
+    {
+      "codigo": "GP204",
+      "nombre": "Posicionamiento Geodésico",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 40,
+        "P": 43,
+        "SG": 7,
+        "total": 90
+      },
+      "nivel_iho": 1,
+      "es_fusion": false,
+      "codigos_base": [
+        "GP204"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "LSM102+OA203",
+      "nombre": "Levantamientos y Oceanografía Aplicada",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 67,
+        "P": 70,
+        "SG": 7,
+        "total": 144
+      },
+      "nivel_iho": 1,
+      "es_fusion": true,
+      "codigos_base": [
+        "LSM102",
+        "OA203"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "MGG103",
+      "nombre": "Geología Marina y Geofísica",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 53,
+        "P": 14,
+        "SG": 8,
+        "total": 75
+      },
+      "nivel_iho": 1,
+      "es_fusion": false,
+      "codigos_base": [
+        "MGG103"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "ABM101+PhyOce104",
+      "nombre": "Batimetría Acústica y Física Oceánica",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 97,
+        "P": 74,
+        "SG": 11,
+        "total": 182
+      },
+      "nivel_iho": 2,
+      "es_fusion": true,
+      "codigos_base": [
+        "ABM101",
+        "PhyOce104"
+      ],
+      "semestre": 1,
+      "nota": ""
+    },
+    {
+      "codigo": "HO202+RS201",
+      "nombre": "Hidrografía y Sensores Remotos",
+      "accion": "FUSIONAR",
+      "horas_propuestas": {
+        "T": 84,
+        "P": 66,
+        "SG": 7,
+        "total": 157
+      },
+      "nivel_iho": 3,
+      "es_fusion": true,
+      "codigos_base": [
+        "HO202",
+        "RS201"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "SG304",
+      "nombre": "Geodesia Satelital",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 34,
+        "P": 43,
+        "SG": 5,
+        "total": 82
+      },
+      "nivel_iho": 2,
+      "es_fusion": false,
+      "codigos_base": [
+        "SG304"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "WTC205",
+      "nombre": "Niveles de Agua, Mareas y Corrientes (NA - MC 205)",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 32,
+        "P": 44,
+        "SG": 3,
+        "total": 79
+      },
+      "nivel_iho": 3,
+      "es_fusion": false,
+      "codigos_base": [
+        "WTC205"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "HDP302",
+      "nombre": "Procesamiento de Datos Hidrográficos",
+      "accion": "REDUCIR",
+      "horas_propuestas": {
+        "T": 32,
+        "P": 88,
+        "SG": 15,
+        "total": 135
+      },
+      "nivel_iho": 4,
+      "es_fusion": false,
+      "codigos_base": [
+        "HDP302"
+      ],
+      "semestre": 2,
+      "nota": ""
+    },
+    {
+      "codigo": "LR303",
+      "nombre": "Leyes y Reglamentación para Actividades Hidrográficas",
+      "accion": "MANTENER",
+      "horas_propuestas": {
+        "T": 27,
+        "P": 11,
+        "SG": 2,
+        "total": 40
+      },
+      "nivel_iho": 5,
+      "es_fusion": false,
+      "codigos_base": [
+        "LR303"
+      ],
+      "semestre": 3,
+      "nota": ""
+    },
+    {
+      "codigo": "PH401-intro",
+      "nombre": "Proyecto Hidrográfico — Introducción",
+      "accion": "REDUCIR (Práctica de Campo)",
+      "horas_propuestas": {
+        "T": 0,
+        "P": 80,
+        "SG": 31,
+        "total": 111
+      },
+      "nivel_iho": 3,
+      "es_fusion": false,
+      "codigos_base": [
+        "PH401"
+      ],
+      "semestre": 2,
+      "nota": "Salidas a terreno iniciales — 20% del proyecto (111 h práctica de campo)"
+    },
+    {
+      "codigo": "PH401-main",
+      "nombre": "Proyecto Hidrográfico — Proyecto Completo",
+      "accion": "REDUCIR (Práctica de Campo)",
+      "horas_propuestas": {
+        "T": 0,
+        "P": 320,
+        "SG": 125,
+        "total": 445
+      },
+      "nivel_iho": 3,
+      "es_fusion": false,
+      "codigos_base": [
+        "PH401"
+      ],
+      "semestre": 3,
+      "nota": "Proyecto hidrográfico completo — 80% del proyecto (445 h práctica de campo)"
+    }
+  ]
+}
