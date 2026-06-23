@@ -276,6 +276,62 @@ def _encontrar_cols_horas(tabla: Any) -> tuple[int | None, int | None, int | Non
     return col_t, col_p, col_ae
 
 
+def _extraer_tpa_fila_total(
+    fila: Any,
+    col_t: int | None,
+    col_p: int | None,
+    col_ae: int | None,
+) -> tuple[int, int, int]:
+    """Extrae T, P, AE de la fila TOTAL manejando celdas fusionadas.
+
+    En algunos documentos (ej. GDM301), la celda P en la fila TOTAL tiene
+    gridSpan=2 y se expande sobre la posición que normalmente ocupa AE,
+    haciendo que celdas[col_ae] devuelva el valor de P en vez de AE.
+    Aquí deduplicamos por identidad de _tc y leemos los valores numéricos
+    únicos que siguen a "TOTAL" en orden: T, P, AE.
+    """
+    cells = fila.cells
+    celdas_texto = [c.text.strip() for c in cells]
+
+    def _vi(idx: int | None) -> int:
+        if idx is None or idx >= len(celdas_texto):
+            return 0
+        try:
+            return int(celdas_texto[idx] or "0")
+        except ValueError:
+            return 0
+
+    t_directo = _vi(col_t)
+    p_directo = _vi(col_p)
+    ae_directo = _vi(col_ae)
+
+    if col_ae is not None and col_p is not None:
+        tc_p = cells[col_p]._tc
+        tc_ae = cells[col_ae]._tc
+        if tc_p is tc_ae:
+            seen_tcs: list[int] = []
+            vals_after_total: list[int] = []
+            past_total = False
+            for c in cells:
+                tc_id = id(c._tc)
+                if tc_id in seen_tcs:
+                    continue
+                seen_tcs.append(tc_id)
+                txt = c.text.strip()
+                if not past_total:
+                    if normalizar(txt) == "total":
+                        past_total = True
+                    continue
+                try:
+                    vals_after_total.append(int(txt or "0"))
+                except ValueError:
+                    vals_after_total.append(0)
+            if len(vals_after_total) >= 3:
+                return vals_after_total[0], vals_after_total[1], vals_after_total[2]
+
+    return t_directo, p_directo, ae_directo
+
+
 def extraer_unidades_tabla(
     doc: Document,
 ) -> tuple[list[dict[str, Any]], list[str], dict[str, int] | None]:
@@ -335,14 +391,7 @@ def extraer_unidades_tabla(
 
         # ── Fila TOTAL: extraer T/P/AE por separado y NO acumular ────────────
         if _es_fila_total(celdas):
-            def _vi(idx: int | None) -> int:
-                if idx is None or idx >= len(celdas):
-                    return 0
-                try:
-                    return int(celdas[idx] or "0")
-                except ValueError:
-                    return 0
-            t = _vi(col_t); p = _vi(col_p); ae = _vi(col_ae)
+            t, p, ae = _extraer_tpa_fila_total(fila, col_t, col_p, col_ae)
             if t + p + ae > 0:
                 horas_total_dict = {"T": t, "P": p, "SG": ae, "total": t + p + ae}
             continue  # NO acumular a unidad_actual

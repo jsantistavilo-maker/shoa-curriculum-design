@@ -223,9 +223,171 @@
     {
       "archivo_fuente": "GDM301_manejo_datos_geoespaciales.docx",
       "codigo_asignatura": "GDM301",
-      "error": "Error procesando archivo: [Errno 13] Permission denied: 'C:\\\\Users\\\\jsant\\\\OneDrive\\\\Desktop\\\\shoa-curriculum-design\\\\programas\\\\GDM301_manejo_datos_geoespaciales.docx'",
+      "nombre_asignatura": "Manejo de Datos Geoespaciales",
+      "horas": {
+        "T": 54,
+        "P": 100,
+        "SG": 6,
+        "total": 160
+      },
+      "fuente_horas": "fila_TOTAL_tabla_unidades",
+      "semestre": null,
+      "prerrequisitos": [],
+      "unidades_tematicas": [
+        {
+          "nombre_unidad": "MDG 1.1 SIG Marino y datos marinos de libre acceso",
+          "horas_asignadas": 32,
+          "contenidos_especificos": [
+            "Características y tipos de puntos, líneas y polígonos con ejemplos marinos.",
+            "Bases de datos marinos y costeros.",
+            "Dátums y proyecciones.",
+            "Dátums verticales.",
+            "Metadatos de levantamientos.",
+            "Mapas e imágenes bases.",
+            "Bases de datos de libre acceso incluyendo GEBCO y ETOPO.",
+            "Portales de datos marinos.",
+            "Confiabilidad de datos desde fuentes Web.",
+            "Datos de fuentes públicas.",
+            "Mapas e imágenes bases"
+          ],
+          "actividades_asociadas": [
+            "Clase expositiva sobre los diferentes tipos de confiabilidad de los datos.",
+            "Clase demostrativa sobre los diferentes tipos de confiabilidad de datos geoespaciales, tales como: batimetría GEBCO, IDE CHILE (Infraestructura de Datos Espaciales), Biblioteca del Congreso Nacional de Chile, Universidad de Chile, información vectorial, metadatos y resolución de la información.\n\nSe exponen elementos del sistema de información geográfica.",
+            "Visita a la Infraestructura de Datos Geo-espaciales (IDE), para conocer cómo la base de datos geoespaciales son usadas a nivel nacional.\n\nConocer la organización de la oficina de infraestructura de datos geoespaciales de Chile, la cual es una red de instituciones públicas que trabajan en forma coordinada y cooperativa con el propósito de generar información actualizada y confiable para toda la comunidad.",
+            "Los alumnos deben comparar entre diferentes tipos de productos geoespaciales proporcionados por el profesor; identificar diferencias en resoluciones y contrastar la alta confiabilidad de los datos con la información generalizada; analizar los resultados en discusión plenaria; buscar, identificar y descargar información georreferenciada correspondiente a un área determinada y presentar dicha información en formato digital durante la clase.",
+            "Los alumnos realizan presentación sobre diferentes tipos de productos geoespaciales e identificación de diferencias en resoluciones.\n\nDiscusión de resultados de la actividad anterior en clase."
+          ]
+        },
+        {
+          "nombre_unidad": "MDG 1.2 Representación, integración y visualización de datos espaciales",
+          "horas_asignadas": 40,
+          "contenidos_especificos": [
+            "Nube de puntos.",
+            "Modelos de superficie.",
+            "Datos vector y raster.",
+            "Resolución espacial.",
+            "Resolución de datos.",
+            "Cálculos de volumen.",
+            "Perfiles.",
+            "Herramientas y métodos para integración y comparación de series de datos híbridos.",
+            "Co-registro de series de datos híbridos.",
+            "Escala horizontal y exageración vertical.",
+            "Uso de esquemas de color.",
+            "Sombra e iluminación.",
+            "Etiquetado. Exageración vertical.",
+            "Exageración vertical."
+          ],
+          "actividades_asociadas": [
+            "El profesor imparte una clase expositiva sobre la identificación de sensores disponibles para sistemas de captura de datos y su integración.",
+            "Clase demostrativa sobre la identificación de nube de puntos, ejemplos de modelos de superficie, datos vector y raster. Determinación de resolución espacial y de datos.",
+            "Los estudiantes deberán integrar datos entregados por el profesor.\nLuego, envían la información digital de múltiples fuentes geoespaciales.",
+            "El profesor realiza una clase expositiva relacionada con la clasificación y discriminación de los datos según su calidad.",
+            "Los estudiantes deberán aplicar control de calidad a los datos proporcionados por el profesor.",
+            "Los estudiantes deberán crear un proyecto SIG en formato .mxd usando software ArcGIS y base de datos GEBCO y Etopo.",
+            "Los alumnos presentan un informe técnico que describa el procedimiento utilizado en el desarrollo de dicho proyecto."
+          ]
+        },
+        {
+          "nombre_unidad": "MDG 1.3 Base de Datos",
+          "horas_asignadas": 24,
+          "contenidos_especificos": [
+            "Bases de datos relacionales.",
+            "Bases de datos espaciales.",
+            "Bases de datos para tener diferentes tipos de características e información geográfica."
+          ],
+          "actividades_asociadas": [
+            "El profesor imparte una clase expositiva sobre el concepto de bases de datos y profundiza en las bases de datos hidrocartográficas.",
+            "Los estudiantes deben poblar una base de datos utilizando el software ArcGIS y generar un producto en formato .gdb."
+          ]
+        },
+        {
+          "nombre_unidad": "MDG 1.4 Interpolación de datos espaciales",
+          "horas_asignadas": 16,
+          "contenidos_especificos": [
+            "Interpolación Polinomial 1D.",
+            "Interpolación segmentaria, B-Splines, Spline multidimensional.",
+            "Interpolación espacial por distancia inversa y Kriging.",
+            "Construcción de grillas y TIN a partir de datos espaciales.",
+            "Interpolación Polinomial 1D",
+            "Interpolación espacial por distancia inversa y kriging",
+            "Técnicas de contorno."
+          ],
+          "actividades_asociadas": [
+            "Clase expositiva sobre conceptos.",
+            "El profesor realiza una clase demostrativa sobre diferentes métodos de interpolación utilizando datos batimétricos multi y monohaz para identificar diferencias entre varias superficies elaboradas y los datos reales.",
+            "Los estudiantes aplican los métodos de interpolación enseñados en clase en un ejercicio práctico, usando los software ArcGIS, Global Mapper y QGIS.",
+            "Clase demostrativa sobre técnicas de contorno y revisión de errores.",
+            "Los estudiantes deben generar un modelo utilizando un método de interpolación seleccionado usando los software ArcGIS, Global Mapper y QGIS.",
+            "Los estudiantes realizan presentación oral del método de interpolación seleccionado."
+          ]
+        },
+        {
+          "nombre_unidad": "MDG 1.5 Productos",
+          "horas_asignadas": 43,
+          "contenidos_especificos": [
+            "Productos provenientes directamente de datos fuentes, tales como, archivos de datos de sondaje y metadatos.",
+            "Bases de datos de accidentes, tales como, restos náufragos, rocas y obstrucciones.",
+            "Datos requeridos para derroteros, listas de faros, radio ayudas a la navegación, guía portuaria y aviso a los navegantes.",
+            "Productos digitales y en papel provenientes de datos fuentes para distintos tipos de levantamiento y usos, tales como, archivos SIG y CAD y/o imágenes geo-referenciadas.",
+            "Informes sobre control de calidad, procedimientos, resultados y conclusiones que detallen los procesos adoptados dentro de las operaciones de un levantamiento y procesamiento de datos.",
+            "Normas, incluyendo:",
+            "S100 de la OHI y normas de productos, tales como S-102.",
+            "Modelo estándar de datos de los fondos marinos (SSDM)."
+          ],
+          "actividades_asociadas": [
+            "El profesor imparte una clase expositiva sobre los tipos de productos hidrográficos (cartas y publicaciones náuticas).",
+            "Los estudiantes visitan el departamento de hidrografía para conocer el flujo de trabajo cartográfico.",
+            "Los estudiantes generan productos cartográficos y elaboran un informe técnico que muestra los elementos y procesos que deben incluir los productos cartográficos digitales y en papel según estándares internacionales.",
+            "Clase demostrativa sobre informes de control de calidad, procedimientos, resultados  y conclusiones que detallen los procesos adoptados dentro de las operaciones de levantamiento y el procesamiento de datos.",
+            "Los estudiantes deberán elaborar un libro de registro de producción cartográfica que muestre los registros del levantamiento, objetivos del producto y datos utilizados.",
+            "El profesor realiza una clase expositiva sobre el conjunto de normas de la OHI S-100.\nLectura complementaria: Normas OHI S-100 \nhttps://iho.int/en/standards-and-specification"
+          ]
+        },
+        {
+          "nombre_unidad": "MDG 1.6 Infraestructura de Datos Espaciales Marinos",
+          "horas_asignadas": 5,
+          "contenidos_especificos": [
+            "Conceptos básicos de la Infraestructura de Datos Espaciales Marinos.",
+            "Importancia y función de los estándares de datos.",
+            "El valor y el beneficio de buenos metadatos.",
+            "Intercambio y uso compartido de datos."
+          ],
+          "actividades_asociadas": [
+            "El profesor imparte una clase expositiva sobre infraestructura de datos marinos geoespaciales.",
+            "Los estudiantes visitan la sección de Datos de Infraestructura Espacial (IDE - oficina SHOA) para conocer los procesos de trabajo."
+          ]
+        }
+      ],
+      "resultados_aprendizaje": [
+        "Identificar los tipos de datos que pueden ser usados para representar características desde el ambiente marino considerando el atributo que pueda estar asociado con tales características.",
+        "Identificar los tipos de datos que pueden ser usados para representar características desde el ambiente marino considerando el atributo que pueda estar asociado con tales características.\nDistinguir entre tipos y fuentes de datos como una medida de confiabilidad y utilidad.",
+        "Integrar datos desde múltiples fuentes y tipos de sensores en la conducción de un levantamiento con múltiples sensores.\nAplicar procedimientos de estimación a mediciones de levantamientos para representar datos de acuerdo con los requisitos del producto.",
+        "Evaluar y seleccionar el mejor método de visualización para destacar características de interés y control de calidad a una serie de datos hidrográficos.\nSeleccionar parámetros óptimos para la representación de datos.",
+        "Crear un proyecto SIG usando datos espaciales marinos.",
+        "Explicar los conceptos de las bases de datos relacionales y espaciales.",
+        "Conceptualizar, desarrollar y poblar una base de datos espacial para representar elementos de un levantamiento hidrográfico y definir sus relaciones entre estos.",
+        "Elegir un método de interpolación apropiado y calcular una superficie a partir de mediciones de levantamiento dispersas.",
+        "Seleccionar métodos de procesamiento de datos espaciales apropiados para crear modelos de terreno digitales o superficies grilladas y de veriles.",
+        "Describir productos hidrográficos y producir productos en papel, como también productos digitales de acuerdo con las especificaciones y normas.",
+        "Preparar un informe que muestre los elementos y procesos que los productos cartográficos digitales y en papel deben incluir de acuerdo con las normas internacionales",
+        "Describir la función de los datos hidrográficos en la Infraestructura de Datos Espaciales Marinos."
+      ],
+      "bibliografia": [
+        "1.     Breman, Joe. (2002). Marine geography: GIS for the oceans and seas. Redlands, Ca: ESRI Press, 204 páginas.",
+        "2.   Nogueras-Iso, Javier. (2005). Geographic information metadata for spatial data infrastructures: Resources, interoperability and information retrieval. Berlin: Springer. 263 páginas.",
+        "3.    Smith, Michael J. de. (2018). Geospatial analysis: A comprehensive guide to principles, techniques and software tools. Leicester, UK: The Winchelsea Press. 6th edition. 617 páginas.",
+        "4.    Santos Preciado, José Miguel. (2004). Sistemas de información geográfica. Madrid: Universidad Nacional de Educación a Distancia. 460 páginas.",
+        "5.     Malczewski, Jacek. (1999). GIS and multicriteria decision analysis. New York: John Wiley, 392 páginas.",
+        "6.      Jones, Christopher. (1997). Geographical information systems and computer cartography. Singapore: Longman. 319 páginas.",
+        "7.    Ordóñez Galán, Celestino. (2003). Sistema de información geográfica: Aplicaciones prácticas con Idrisi32 al análisis de riesgos naturales y problemáticas medioambientales. México: Alfaomega, 227 páginas.",
+        "8.    Thurston, Jeff; Thomas K. Poiker & J. Patrick Moore. (2003). Integrated geospatial technologies: A guide to GPS, GIS and data logging. Hoboken, NJ: John Wiley, 266 páginas.",
+        "9.     Burrough, Peter A. (2015). Principles of geographical information systems. Oxford: Oxford University Press. 333 páginas.",
+        "10.   Valavanis, Vasilis D. (2002). Geographic information systems in oceanography and fisheries. London: Taylor and Francis, 209 páginas.",
+        "11.   Star, Jeffrey L., ed.; John E. Estes, ed. & Kenneth C. McGwire, ed. (1997). Integration of geographic information systems and remote sensing. Cambridge, UK: Cambridge  University. 226 páginas.",
+        "12.  Green, David R. & Stephen D. King. (2003). Coastal and marine geo-information systems: applying the technology to the environment (Coastal Systems and Continental Margins). Springer, 596 páginas."
+      ],
       "campos_no_encontrados": [
-        "documento_no_procesable"
+        "semestre"
       ]
     },
     {
