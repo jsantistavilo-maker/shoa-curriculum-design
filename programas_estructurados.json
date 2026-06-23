@@ -920,8 +920,8 @@
       "codigo_asignatura": "LR303",
       "nombre_asignatura": "Leyes y Reglamentación para Actividades Hidrográficas",
       "horas": {
-        "T": 28,
-        "P": 10,
+        "T": 27,
+        "P": 11,
         "SG": 2,
         "total": 40
       },
@@ -1406,11 +1406,11 @@
       "nombre_asignatura": "Proyecto Hidrográfico",
       "horas": {
         "T": 0,
-        "P": 0,
-        "SG": 0,
+        "P": 534,
+        "SG": 208,
         "total": 742
       },
-      "fuente_horas": "tabla_resumen_superior",
+      "fuente_horas": "fila_TOTAL_word_confirmado",
       "semestre": null,
       "prerrequisitos": [],
       "unidades_tematicas": [],

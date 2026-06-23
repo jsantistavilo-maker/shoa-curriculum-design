@@ -487,12 +487,13 @@ def main() -> None:
     subdimensionados = int(topicos_resumen.get("subdimensionados", 0))
     cobertura_iho    = round((1 - (subdimensionados / total_topicos)) * 100, 2) if total_topicos else 0.0
 
-    topics = curriculum_data.get("topics", [])
-    total_shoa_topics = sum(float(t.get("shoa") or 0.0) for t in topics)
+    topics_raw = curriculum_data.get("topics", {})
+    topics_list = topics_raw.values() if isinstance(topics_raw, dict) else topics_raw
+    total_shoa_topics = sum(float(t.get("shoa") or 0.0) for t in topics_list)
     total_intl_prom   = sum(
         (float(t.get("padilla") or 0) + float(t.get("sweden") or 0)
          + float(t.get("uss") or 0) + float(t.get("ucl") or 0)) / 4.0
-        for t in topics
+        for t in topics_list
     )
 
     salida = {

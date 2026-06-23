@@ -1,25 +1,21 @@
 {
   "metadata": {
-    "fuente": "S-5A_Ed1.0.2.pdf",
-    "nota": "Niveles de competencia IHO S-5A: B=Basic, I=Intermediate, A=Advanced. Para elementos con múltiples niveles se tomó el más alto.",
-    "total_elementos": 110,
-    "total_topicos_padre": 39
+    "fuente": "S-5A_Ed1.0.3-template (1).docx",
+    "nota": "Niveles de competencia IHO S-5A extraídos del template oficial: B=Basic, I=Intermediate, A=Advanced.",
+    "total_elementos": 112,
+    "total_topicos_padre": 38
   },
   "elementos": {
-    "B1.1a": "B",
-    "B1.1b": "I",
-    "B1.1c": "I",
-    "B1.2a": "B",
-    "B1.2b": "I",
-    "B1.2c": "B",
-    "B1.3a": "I",
-    "B1.3b": "I",
+    "E6.1c": "A",
+    "E8.2b": "I",
+    "F1.1a": "B",
     "F1.1b": "B",
     "F1.1c": "B",
     "F1.1d": "I",
     "F1.2a": "I",
     "F1.2b": "A",
     "F1.2c": "I",
+    "F1.2d": "A",
     "F1.3a": "I",
     "F1.3b": "I",
     "F1.3c": "I",
@@ -51,6 +47,7 @@
     "H1.3a": "A",
     "H1.3b": "A",
     "H1.3c": "I",
+    "H1.3d": "I",
     "H1.4a": "A",
     "H1.4b": "A",
     "H1.4c": "I",
@@ -62,6 +59,7 @@
     "H2.1d": "I",
     "H2.1e": "A",
     "H2.2a": "I",
+    "H2.2b": "A",
     "H2.2c": "A",
     "H2.2d": "A",
     "H2.3a": "A",
@@ -76,8 +74,10 @@
     "H3.1b": "A",
     "H3.1c": "B",
     "H3.2a": "I",
+    "H3.2b": "B",
     "H3.2c": "I",
     "H4.1a": "A",
+    "H4.1b": "A",
     "H4.2a": "A",
     "H4.2b": "A",
     "H4.2c": "A",
@@ -103,6 +103,7 @@
     "H5.5b": "I",
     "H6.1a": "A",
     "H6.1b": "A",
+    "H6.2": "A",
     "H6.2b": "A",
     "H6.2c": "A",
     "H6.2d": "A",
@@ -114,13 +115,13 @@
     "H7.3a": "I",
     "H7.3b": "A",
     "H7.3c": "A",
+    "H8.1a": "I",
     "H8.1b": "I",
-    "H8.2a": "I"
+    "H8.2a": "B"
   },
   "topicos": {
-    "B1.1": "I",
-    "B1.2": "I",
-    "B1.3": "I",
+    "E6.1": "A",
+    "E8.2": "I",
     "F1.1": "I",
     "F1.2": "A",
     "F1.3": "I",
@@ -156,6 +157,6 @@
     "H7.2": "B",
     "H7.3": "A",
     "H8.1": "I",
-    "H8.2": "I"
+    "H8.2": "B"
   }
 }

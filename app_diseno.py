@@ -175,23 +175,212 @@ def fig_grafo(
         sems_presentes.add(sem)
 
     annotations = [
-        dict(x=float(s) * 3.5, y=4.8, text=f"<b>Semestre {s}</b>",
+        dict(x=float(s) * 3.5, y=5.6, text=f"<b>Semestre {s}</b>",
              showarrow=False, font=dict(size=13, color="#424242"), xanchor="center")
         for s in sorted(sems_presentes)
     ]
 
     fig = go.Figure(data=traces)
     fig.update_layout(
-        title=dict(text=titulo, font=dict(size=15)),
+        title=dict(text=titulo, font=dict(size=14), y=0.98, yanchor="top"),
         showlegend=True,
         hovermode="closest",
         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        height=520,
-        margin=dict(l=10, r=10, t=55, b=10),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False,
+                   range=[-5.5, 6.5]),
+        height=580,
+        margin=dict(l=10, r=10, t=120, b=10),
+        legend=dict(orientation="h", yanchor="top", y=1.12,
+                    xanchor="center", x=0.5, font=dict(size=10)),
         annotations=annotations,
         plot_bgcolor="rgba(245,245,245,0.5)",
+    )
+    return fig
+
+
+# ── Grafo Propuesta A ────────────────────────────────────────────────────────
+_PROPUESTA_A_NODOS: list[dict[str, Any]] = [
+    {"id": "ABM101+PhyOce104", "code_label": "ABM101+PhyOce104", "nombre_corto": "Batimetría y Física",            "sem": 1, "horas": 182, "fusionado": True},
+    {"id": "LSM102+OA203",     "code_label": "LSM102+OA203",     "nombre_corto": "Levantamientos y Oceanogr.",     "sem": 1, "horas": 144, "fusionado": True},
+    {"id": "MGG103",           "code_label": "MGG103",           "nombre_corto": "Geología Marina",                "sem": 1, "horas": 75,  "fusionado": False, "nivel": 1},
+    {"id": "GP204",            "code_label": "GP204",            "nombre_corto": "Posic. Geodésico",               "sem": 1, "horas": 90,  "fusionado": False, "nivel": 2},
+    {"id": "HO202+RS201",      "code_label": "HO202+RS201",     "nombre_corto": "Hidrografía y Sensores",         "sem": 2, "horas": 157, "fusionado": True},
+    {"id": "SG304",            "code_label": "SG304",            "nombre_corto": "Geodesia Satelital",             "sem": 2, "horas": 82,  "fusionado": False, "nivel": 3},
+    {"id": "WTC205",           "code_label": "WTC205",           "nombre_corto": "Mareas y Corrientes",            "sem": 2, "horas": 79,  "fusionado": False, "nivel": 2},
+    {"id": "HDP302",           "code_label": "HDP302",           "nombre_corto": "Proc. Datos Hidrogr.",           "sem": 2, "horas": 135, "fusionado": False, "nivel": 4},
+    {"id": "LR303",            "code_label": "LR303",            "nombre_corto": "Leyes y Regulación",             "sem": 3, "horas": 40,  "fusionado": False, "nivel": 3},
+    {"id": "PH401",            "code_label": "PH401",            "nombre_corto": "Proyecto Hidrográfico",          "sem": 3, "horas": 556, "fusionado": False, "nivel": 5},
+]
+
+_PROPUESTA_A_ARISTAS: list[tuple[str, str]] = [
+    ("ABM101+PhyOce104", "HO202+RS201"),   # ABM101 → HO202
+    ("LSM102+OA203",     "GP204"),          # LSM102 → GP204
+    ("MGG103",           "LSM102+OA203"),   # MGG103 → OA203
+    ("MGG103",           "GP204"),          # MGG103 → GP204
+    ("ABM101+PhyOce104", "WTC205"),         # PhyOce104 → WTC205
+    ("HO202+RS201",      "HDP302"),         # HO202 → HDP302
+    ("HO202+RS201",      "PH401"),          # RS201 → GDM301 → PH401 (transitivo)
+    ("LSM102+OA203",     "SG304"),          # OA203 → SG304
+    ("GP204",            "SG304"),          # GP204 → SG304
+    ("HDP302",           "PH401"),          # HDP302 → PH401
+    ("LR303",            "PH401"),          # LR303 → PH401
+    ("SG304",            "PH401"),          # SG304 → PH401
+]
+
+_PROPUESTA_A_HORAS_SEM: dict[int, str] = {
+    1: "491 h",
+    2: "453 h",
+    3: "40 h lectivas + 556 h campo",
+}
+
+FUSION_COLOR = "#E67E22"
+
+
+def fig_grafo_propuesta_a() -> go.Figure:
+    """Grafo Propuesta A — solo nodos por semestre, sin aristas."""
+    X_SEM = {1: 0.0, 2: 5.0, 3: 10.0}
+
+    _POS: dict[str, tuple[float, float]] = {
+        "ABM101+PhyOce104": (X_SEM[1],  3.6),
+        "LSM102+OA203":     (X_SEM[1],  1.2),
+        "MGG103":           (X_SEM[1], -1.2),
+        "GP204":            (X_SEM[1], -3.6),
+        "HO202+RS201":      (X_SEM[2],  3.6),
+        "WTC205":           (X_SEM[2],  1.2),
+        "SG304":            (X_SEM[2], -1.2),
+        "HDP302":           (X_SEM[2], -3.6),
+        "LR303":            (X_SEM[3],  1.2),
+        "PH401":            (X_SEM[3], -1.8),
+    }
+
+    NODE_SIZE = 40
+    PH_SIZE = 50
+    traces: list[Any] = []
+
+    def _size(nid: str) -> int:
+        return PH_SIZE if nid == "PH401" else NODE_SIZE
+
+    # ── Nodos fusionados ─────────────────────────────────────────────────────
+    fusionados = [n for n in _PROPUESTA_A_NODOS if n["fusionado"]]
+    if fusionados:
+        traces.append(go.Scatter(
+            x=[_POS[n["id"]][0] for n in fusionados],
+            y=[_POS[n["id"]][1] for n in fusionados],
+            mode="markers",
+            marker=dict(
+                size=[_size(n["id"]) for n in fusionados],
+                color=FUSION_COLOR,
+                line=dict(width=2.5, color="white"),
+                opacity=0.95,
+            ),
+            name="Fusionado",
+            hovertext=[
+                f"<b>{n['id']}</b><br>{n['nombre_corto']}<br>"
+                f"Semestre {n['sem']} | {n['horas']} h<br>"
+                f"<i>Asignaturas fusionadas</i>"
+                for n in fusionados
+            ],
+            hoverinfo="text",
+        ))
+
+    # ── Nodos individuales por nivel IHO ─────────────────────────────────────
+    niveles_usados: dict[int, list[dict]] = defaultdict(list)
+    for n in _PROPUESTA_A_NODOS:
+        if not n["fusionado"]:
+            niveles_usados[n.get("nivel", 1)].append(n)
+
+    for nivel, grupo in niveles_usados.items():
+        color = NIVEL_COLOR.get(nivel, "#607D8B")
+        traces.append(go.Scatter(
+            x=[_POS[n["id"]][0] for n in grupo],
+            y=[_POS[n["id"]][1] for n in grupo],
+            mode="markers",
+            marker=dict(
+                size=[_size(n["id"]) for n in grupo],
+                color=color,
+                line=dict(width=2, color="white"),
+                opacity=0.92,
+            ),
+            name=NIVEL_LABEL.get(nivel, f"Nivel {nivel}"),
+            hovertext=[
+                f"<b>{n['id']}</b><br>{n['nombre_corto']}<br>"
+                f"Semestre {n['sem']} | {n['horas']} h"
+                for n in grupo
+            ],
+            hoverinfo="text",
+        ))
+
+    # ── Etiquetas debajo de cada nodo (código completo + nombre + horas) ─────
+    node_labels: list[dict] = []
+    for n in _PROPUESTA_A_NODOS:
+        x, y = _POS[n["id"]]
+        node_labels.append(dict(
+            x=x, y=y - 0.75,
+            text=(
+                f"<b>{n['code_label']}</b><br>"
+                f"<span style='font-size:8px'>{n['nombre_corto']} — {n['horas']} h</span>"
+            ),
+            showarrow=False,
+            font=dict(size=8, color="#333"),
+            xanchor="center", yanchor="top",
+        ))
+
+    # ── Cabeceras de semestre ────────────────────────────────────────────────
+    sem_headers: list[dict] = []
+    for s in (1, 2, 3):
+        sem_headers.append(dict(
+            x=X_SEM[s], y=5.8,
+            text=(
+                f"<b>Semestre {s}</b><br>"
+                f"<span style='font-size:11px;color:#666'>"
+                f"{_PROPUESTA_A_HORAS_SEM[s]}</span>"
+            ),
+            showarrow=False,
+            font=dict(size=14, color="#2C3E50"),
+            xanchor="center", yanchor="bottom",
+        ))
+
+    # ── Divisores verticales punteados ────────────────────────────────────────
+    shapes: list[dict] = []
+    for x_div in [2.5, 7.5]:
+        shapes.append(dict(
+            type="line",
+            x0=x_div, x1=x_div,
+            y0=-5.5, y1=6.5,
+            xref="x", yref="y",
+            line=dict(color="#ECF0F1", width=1, dash="dot"),
+            layer="below",
+        ))
+
+    fig = go.Figure(data=traces)
+    fig.update_layout(
+        title=dict(
+            text="Versión A — PH401 al cierre del programa",
+            font=dict(size=14, color="#2C3E50"),
+            x=0.5, xanchor="center",
+            y=0.98, yanchor="top",
+        ),
+        showlegend=True,
+        hovermode="closest",
+        xaxis=dict(
+            showgrid=False, zeroline=False, showticklabels=False,
+            range=[-3, 13],
+        ),
+        yaxis=dict(
+            showgrid=False, zeroline=False, showticklabels=False,
+            range=[-6, 7.5],
+        ),
+        height=700,
+        margin=dict(l=20, r=20, t=120, b=20),
+        legend=dict(
+            orientation="h", yanchor="top", y=1.12,
+            xanchor="center", x=0.5,
+            font=dict(size=10),
+            itemwidth=30,
+        ),
+        annotations=node_labels + sem_headers,
+        shapes=shapes,
+        plot_bgcolor="rgba(250,250,250,0.8)",
     )
     return fig
 
@@ -236,28 +425,15 @@ def tab_progresion() -> None:
     st.markdown("&nbsp;", unsafe_allow_html=True)
 
     # Grafos: actual vs propuesto
-    if sem_propuesto:
-        col_a, col_b = st.columns(2)
-        with col_a:
-            st.plotly_chart(
-                fig_grafo(asignaturas, dependencias, aristas_problema,
-                          titulo="Estructura Actual"),
-                width="stretch",
-            )
-        with col_b:
-            st.plotly_chart(
-                fig_grafo(asignaturas, dependencias, aristas_problema,
-                          override=sem_propuesto,
-                          titulo="Estructura Propuesta (3 semestres)"),
-                width="stretch",
-            )
-    else:
-        st.plotly_chart(
-            fig_grafo(asignaturas, dependencias, aristas_problema,
-                      titulo="Estructura Actual"),
-            width="stretch",
-        )
-        st.info("Ejecuta `propuesta_curricular.py` para ver la vista propuesta en paralelo.")
+    st.plotly_chart(
+        fig_grafo(asignaturas, dependencias, aristas_problema,
+                  titulo="Estructura Actual (14 asignaturas, 4 semestres)"),
+        use_container_width=True,
+    )
+    st.plotly_chart(
+        fig_grafo_propuesta_a(),
+        use_container_width=True,
+    )
 
     st.caption("🔴 Aristas rojas = problemas de progresión detectados")
 

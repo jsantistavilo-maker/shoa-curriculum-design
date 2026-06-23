@@ -15,10 +15,57 @@ PROGRESION_PATH = BASE_DIR / "progresion_analisis.json"
 OUTPUT_PATH = BASE_DIR / "reiteracion_matriz.json"
 
 FUZZY_THRESHOLD = 75
+DEDUP_INTRA_THRESHOLD = 90
 
 
 def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _norm_key(texto: str) -> str:
+    """Normaliza un texto para usar como clave de deduplicación."""
+    import re as _re
+    import unicodedata as _ud
+    t = _ud.normalize("NFKD", texto)
+    t = "".join(ch for ch in t if not _ud.combining(ch))
+    t = t.lower().strip()
+    t = _re.sub(r"[.,:;!?]+$", "", t)
+    t = _re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def _dedup_contenidos_intra(contenidos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Elimina contenidos near-duplicados dentro de la misma asignatura.
+
+    Si dos items del mismo código tienen similitud >= DEDUP_INTRA_THRESHOLD,
+    conserva el de texto más largo.
+    """
+    from collections import defaultdict
+
+    por_codigo: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for c in contenidos:
+        por_codigo[c["codigo"]].append(c)
+
+    resultado: list[dict[str, Any]] = []
+    eliminados = 0
+    for codigo, items in por_codigo.items():
+        keep = [True] * len(items)
+        for i in range(len(items)):
+            if not keep[i]:
+                continue
+            for j in range(i + 1, len(items)):
+                if not keep[j]:
+                    continue
+                sim = fuzz.token_set_ratio(items[i]["contenido"], items[j]["contenido"])
+                if sim >= DEDUP_INTRA_THRESHOLD:
+                    shorter = j if len(items[j]["contenido"]) <= len(items[i]["contenido"]) else i
+                    keep[shorter] = False
+                    eliminados += 1
+        resultado.extend(items[k] for k in range(len(items)) if keep[k])
+
+    if eliminados:
+        print(f"  Contenidos intra-asignatura deduplicados: {eliminados} eliminados")
+    return resultado
 
 
 def clasificar_reiteracion(
@@ -72,7 +119,7 @@ def main() -> None:
     progresion_data = load_json(PROGRESION_PATH)
     meta_asig = {a["codigo"]: a for a in progresion_data.get("asignaturas", [])}
 
-    contenidos: list[dict[str, Any]] = []
+    contenidos_raw: list[dict[str, Any]] = []
     for prog in programas_data:
         codigo = prog.get("codigo_asignatura")
         if not codigo or prog.get("error"):
@@ -85,7 +132,7 @@ def main() -> None:
             for c in unidad.get("contenidos_especificos", []):
                 t = str(c).strip()
                 if len(t) >= 12:
-                    contenidos.append(
+                    contenidos_raw.append(
                         {
                             "codigo": codigo,
                             "semestre": semestre,
@@ -95,6 +142,10 @@ def main() -> None:
                             "contenido": t,
                         }
                     )
+
+    print(f"  Contenidos extraídos: {len(contenidos_raw)}")
+    contenidos = _dedup_contenidos_intra(contenidos_raw)
+    print(f"  Contenidos tras dedup intra-asignatura: {len(contenidos)}")
 
     reiteraciones: list[dict[str, Any]] = []
     pares_vistos: set[frozenset] = set()
@@ -112,10 +163,9 @@ def main() -> None:
 
             total_bruto += 1
 
-            # Deduplicar: frozenset trata (A→B) y (B→A) como el mismo par
             par_key: frozenset = frozenset([
-                (c1["codigo"], c1["contenido"]),
-                (c2["codigo"], c2["contenido"]),
+                (c1["codigo"], _norm_key(c1["contenido"])),
+                (c2["codigo"], _norm_key(c2["contenido"])),
             ])
             if par_key in pares_vistos:
                 continue
@@ -153,7 +203,43 @@ def main() -> None:
             )
 
     print(f"  Reiteraciones antes (bruto): {total_bruto} pares")
-    print(f"  Reiteraciones después de deduplicar: {len(reiteraciones)} pares únicos")
+    print(f"  Reiteraciones tras frozenset: {len(reiteraciones)} pares únicos")
+
+    # ── Dedup inter-par: por cada par (asig1, asig2), colapsar entradas
+    #    donde el contenido target (c2) es el mismo o muy similar,
+    #    conservando solo la de mayor similitud.
+    pre_inter = len(reiteraciones)
+    from collections import defaultdict as _dlist
+
+    por_par: dict[tuple[str, str], list[dict]] = _dlist(list)
+    for r in reiteraciones:
+        par = tuple(sorted([r["asignatura_1"], r["asignatura_2"]]))
+        por_par[par].append(r)
+
+    reiteraciones_final: list[dict[str, Any]] = []
+    for par, entries in por_par.items():
+        entries.sort(key=lambda e: -e["similitud"])
+        keep = [True] * len(entries)
+        for i in range(len(entries)):
+            if not keep[i]:
+                continue
+            for j in range(i + 1, len(entries)):
+                if not keep[j]:
+                    continue
+                sim_c2 = fuzz.token_set_ratio(
+                    entries[i]["contenido_relacionado"],
+                    entries[j]["contenido_relacionado"],
+                )
+                sim_c1 = fuzz.token_set_ratio(
+                    entries[i]["contenido"],
+                    entries[j]["contenido"],
+                )
+                if sim_c2 >= 85 or sim_c1 >= 85:
+                    keep[j] = False
+        reiteraciones_final.extend(entries[k] for k in range(len(entries)) if keep[k])
+
+    reiteraciones = reiteraciones_final
+    print(f"  Reiteraciones únicas después: {len(reiteraciones)} pares")
 
     reiteraciones.sort(
         key=lambda r: (

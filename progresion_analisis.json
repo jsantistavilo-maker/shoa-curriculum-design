@@ -1,9 +1,9 @@
 {
   "resumen": {
-    "total_asignaturas": 13,
+    "total_asignaturas": 14,
     "total_dependencias": 0,
     "total_problemas": 0,
-    "total_sin_prerrequisitos_claros": 5
+    "total_sin_prerrequisitos_claros": 6
   },
   "asignaturas": [
     {
@@ -15,6 +15,17 @@
         "H2",
         "H6",
         "H1"
+      ],
+      "prerrequisitos": []
+    },
+    {
+      "codigo": "GDM301",
+      "nombre": "Manejo de Datos Geoespaciales",
+      "semestre_actual": 3,
+      "nivel_iho_predominante": 4,
+      "topicos_iho": [
+        "H7",
+        "H6"
       ],
       "prerrequisitos": []
     },
@@ -157,6 +168,12 @@
   "aristas_con_problema": [],
   "problemas_progresion": [],
   "asignaturas_sin_prerrequisitos_claros": [
+    {
+      "codigo": "GDM301",
+      "nombre": "Manejo de Datos Geoespaciales",
+      "nivel_iho_predominante": 4,
+      "descripcion": "Asignatura de nivel avanzado sin prerrequisitos explícitos; debería revisarse la dependencia con fundamentos previos."
+    },
     {
       "codigo": "HDP302",
       "nombre": "Procesamiento de Datos Hidrográficos",

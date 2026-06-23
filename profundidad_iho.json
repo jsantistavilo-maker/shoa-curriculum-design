@@ -1,9 +1,9 @@
 {
   "resumen": {
-    "total_topicos_analizados": 103,
-    "sobredimensionados": 16,
-    "alineados": 43,
-    "subdimensionados": 44,
+    "total_topicos_analizados": 108,
+    "sobredimensionados": 20,
+    "alineados": 42,
+    "subdimensionados": 46,
     "sin_nivel_en_norma": 0,
     "escala_niveles": "B=Basic < I=Intermediate < A=Advanced (IHO S-5A)"
   },
@@ -12,9 +12,9 @@
       "codigo_topico_iho": "F1.1a",
       "topico_iho": "F1",
       "descripcion": "The gravity field of the Earth (B)",
-      "nivel_iho_requerido": "I",
+      "nivel_iho_requerido": "B",
       "nivel_actual_programa": "I",
-      "clasificacion": "ALINEADO",
+      "clasificacion": "SOBREDIMENSIONADO",
       "asignaturas_relacionadas": [
         "GP204"
       ]
@@ -447,9 +447,9 @@
       "codigo_topico_iho": "H1.3d",
       "topico_iho": "H1",
       "descripcion": "Aided inertial navigation (I)",
-      "nivel_iho_requerido": "A",
+      "nivel_iho_requerido": "I",
       "nivel_actual_programa": "I",
-      "clasificacion": "SUBDIMENSIONADO",
+      "clasificacion": "ALINEADO",
       "asignaturas_relacionadas": [
         "SG304"
       ]
@@ -744,9 +744,9 @@
       "codigo_topico_iho": "H3.2b",
       "topico_iho": "H3",
       "descripcion": "Satellite altimetry (B)",
-      "nivel_iho_requerido": "I",
+      "nivel_iho_requerido": "B",
       "nivel_actual_programa": "I",
-      "clasificacion": "ALINEADO",
+      "clasificacion": "SOBREDIMENSIONADO",
       "asignaturas_relacionadas": [
         "RS201"
       ]
@@ -1081,6 +1081,28 @@
       ]
     },
     {
+      "codigo_topico_iho": "H6.2d",
+      "topico_iho": "H6",
+      "descripcion": "Spatial data interpolation (I, A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "B",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GDM301"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H6.2e",
+      "topico_iho": "H6",
+      "descripcion": "Spatial data representation (I, A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "B",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GDM301"
+      ]
+    },
+    {
       "codigo_topico_iho": "H7.1a",
       "topico_iho": "H7",
       "descripcion": "Databases (I)",
@@ -1088,6 +1110,7 @@
       "nivel_actual_programa": "I",
       "clasificacion": "ALINEADO",
       "asignaturas_relacionadas": [
+        "GDM301",
         "PH401"
       ]
     },
@@ -1099,7 +1122,30 @@
       "nivel_actual_programa": "I",
       "clasificacion": "SOBREDIMENSIONADO",
       "asignaturas_relacionadas": [
+        "GDM301",
         "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.2a",
+      "topico_iho": "H7",
+      "descripcion": "MSDI (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "B",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GDM301"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.2b",
+      "topico_iho": "H7",
+      "descripcion": "Open access marine data (B)",
+      "nivel_iho_requerido": "B",
+      "nivel_actual_programa": "B",
+      "clasificacion": "ALINEADO",
+      "asignaturas_relacionadas": [
+        "GDM301"
       ]
     },
     {
@@ -1110,7 +1156,19 @@
       "nivel_actual_programa": "I",
       "clasificacion": "ALINEADO",
       "asignaturas_relacionadas": [
+        "GDM301",
         "PH401"
+      ]
+    },
+    {
+      "codigo_topico_iho": "H7.3b",
+      "topico_iho": "H7",
+      "descripcion": "Spatial data visualisation (A)",
+      "nivel_iho_requerido": "A",
+      "nivel_actual_programa": "B",
+      "clasificacion": "SUBDIMENSIONADO",
+      "asignaturas_relacionadas": [
+        "GDM301"
       ]
     },
     {
@@ -1121,6 +1179,7 @@
       "nivel_actual_programa": "I",
       "clasificacion": "SUBDIMENSIONADO",
       "asignaturas_relacionadas": [
+        "GDM301",
         "PH401"
       ]
     },
@@ -1150,9 +1209,9 @@
       "codigo_topico_iho": "H8.2a",
       "topico_iho": "H8",
       "descripcion": "Delimitations (B)",
-      "nivel_iho_requerido": "I",
+      "nivel_iho_requerido": "B",
       "nivel_actual_programa": "I",
-      "clasificacion": "ALINEADO",
+      "clasificacion": "SOBREDIMENSIONADO",
       "asignaturas_relacionadas": [
         "LR303"
       ]
@@ -1161,9 +1220,9 @@
       "codigo_topico_iho": "H8.2b",
       "topico_iho": "H8",
       "descripcion": "Impact of surveys (I)",
-      "nivel_iho_requerido": "I",
+      "nivel_iho_requerido": "B",
       "nivel_actual_programa": "I",
-      "clasificacion": "ALINEADO",
+      "clasificacion": "SOBREDIMENSIONADO",
       "asignaturas_relacionadas": [
         "LR303"
       ]
@@ -1175,9 +1234,14 @@
       "ALINEADO": 5,
       "SUBDIMENSIONADO": 15
     },
+    "GDM301": {
+      "SOBREDIMENSIONADO": 1,
+      "ALINEADO": 4,
+      "SUBDIMENSIONADO": 4
+    },
     "GP204": {
-      "SOBREDIMENSIONADO": 5,
-      "ALINEADO": 6,
+      "SOBREDIMENSIONADO": 6,
+      "ALINEADO": 5,
       "SUBDIMENSIONADO": 6
     },
     "HDP302": {
@@ -1191,8 +1255,8 @@
       "SUBDIMENSIONADO": 0
     },
     "LR303": {
-      "SOBREDIMENSIONADO": 0,
-      "ALINEADO": 4,
+      "SOBREDIMENSIONADO": 2,
+      "ALINEADO": 2,
       "SUBDIMENSIONADO": 0
     },
     "LSM102": {
@@ -1221,14 +1285,14 @@
       "SUBDIMENSIONADO": 1
     },
     "RS201": {
-      "SOBREDIMENSIONADO": 2,
-      "ALINEADO": 3,
+      "SOBREDIMENSIONADO": 3,
+      "ALINEADO": 2,
       "SUBDIMENSIONADO": 2
     },
     "SG304": {
       "SOBREDIMENSIONADO": 0,
-      "ALINEADO": 3,
-      "SUBDIMENSIONADO": 4
+      "ALINEADO": 4,
+      "SUBDIMENSIONADO": 3
     },
     "WTC205": {
       "SOBREDIMENSIONADO": 2,
